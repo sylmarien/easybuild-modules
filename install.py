@@ -2,11 +2,13 @@ import sys
 import subprocess
 import yaml
 
+EBversion = '' if len(sys.argv) == 1 else '/' + sys.argv[1]
+
 stream = file('softwares.yaml', 'r')
 softList = yaml.load(stream)
 
 process = subprocess.Popen('/bin/bash', stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-process.stdin.write('module load EasyBuild\n')
+process.stdin.write('module load EasyBuild' + EBversion + '\n')
 
 for software in softList['softwares']:
     process.stdin.write('eb ' + software + ' -D --robot\n')
