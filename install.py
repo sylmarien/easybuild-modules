@@ -25,5 +25,3 @@ while True:
         else:
             sys.stdout.write('Operation failed with return code ' + out)
         break
-
-sys.stdout.write("Finishing EasyBuild software installation step.\n")
