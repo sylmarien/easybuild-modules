@@ -1,6 +1,8 @@
 easybuild-modules
 =================
 
+version: v1.0.0
+
 Python script to install a defined set of EasyBuild modules
 
 # Description
