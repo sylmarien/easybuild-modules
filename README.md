@@ -7,7 +7,8 @@ Python script to install a defined set of EasyBuild modules
 
 # Description
 
-This python script automatically a list of software defined in a YAML file.
+This python script automatically a list of software defined in a YAML file.  
+Now integreted in RESIF.
 
 # Usage
 
